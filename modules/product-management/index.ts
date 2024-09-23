@@ -17,14 +17,6 @@ export default defineNuxtModule({
     //   dirs.push(resolve(__dirname, "./composables"));
     // });
 
-    const componentsDir = resolve(__dirname, "components");
-    nuxt.hook("components:dirs", (dirs) => {
-      dirs.push({
-        path: componentsDir,
-        prefix: "ProductManagement",
-      });
-    });
-
     nuxt.hook("pages:extend", (pages) => {
       pages.push({
         name: "product-management",
