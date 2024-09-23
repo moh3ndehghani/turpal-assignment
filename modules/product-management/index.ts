@@ -1,12 +1,10 @@
 import { defineNuxtModule } from "@nuxt/kit";
 import { resolve, join } from "path";
 import type { Nuxt } from "@nuxt/schema";
-import fs from "fs";
-import path from "path";
 export default defineNuxtModule({
   meta: {
-    name: "user-profile-module",
-    configKey: "user-profile",
+    name: "product-management-module",
+    configKey: "product-management",
   },
 
   setup(options: any, nuxt: Nuxt) {
@@ -23,28 +21,16 @@ export default defineNuxtModule({
     nuxt.hook("components:dirs", (dirs) => {
       dirs.push({
         path: componentsDir,
-        prefix: "UserProfile",
+        prefix: "ProductManagement",
       });
     });
 
     nuxt.hook("pages:extend", (pages) => {
-      pages.push(
-        {
-          name: "user-profile",
-          path: "/user-profile",
-          file: resolve(__dirname, "./pages/index.vue"),
-        },
-        {
-          name: "user-profile-security",
-          path: "/user-profile/security",
-          file: resolve(__dirname, "./pages/security/index.vue"),
-        },
-        {
-          name: "user-profile-settings",
-          path: "/user-profile/settings/:name",
-          file: resolve(__dirname, "./pages/settings/[name].vue"),
-        }
-      );
+      pages.push({
+        name: "product-management",
+        path: "/product-management",
+        file: resolve(__dirname, "./pages/index.vue"),
+      });
     });
   },
 });

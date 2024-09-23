@@ -4,8 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: [
     // "./modules/shared",
-    "./modules/order-processing",
-    "./modules/product-management",
+    // "./modules/order-processing",
     "./modules/user-profile",
+    "./modules/product-management",
   ],
 });
