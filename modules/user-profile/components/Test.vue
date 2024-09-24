@@ -1,3 +1,3 @@
-<template>Test template profile</template>
+<template>est template profile</template>
 
 <script setup></script>

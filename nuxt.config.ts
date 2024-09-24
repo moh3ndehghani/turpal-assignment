@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   extends: [
     // "./modules/shared",
     // "./modules/order-processing",
-    "./modules/user-profile",
     "./modules/product-management",
+    "./modules/user-profile",
   ],
 });

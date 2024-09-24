@@ -1,3 +1,3 @@
-<template>Test template management</template>
+<template> management</template>
 
 <script setup></script>

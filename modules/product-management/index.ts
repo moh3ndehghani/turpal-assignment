@@ -1,6 +1,8 @@
-import { defineNuxtModule } from "@nuxt/kit";
-import { resolve, join } from "path";
+import { resolve, join  , dirname} from "path";
 import type { Nuxt } from "@nuxt/schema";
+import { fileURLToPath } from 'url'
+import { defineNuxtModule, addComponent , addLayout } from '@nuxt/kit'
+
 export default defineNuxtModule({
   meta: {
     name: "product-management-module",
@@ -17,11 +19,17 @@ export default defineNuxtModule({
     //   dirs.push(resolve(__dirname, "./composables"));
     // });
 
+    addLayout({
+      src: resolve(__dirname, './layouts/default.vue'),
+      filename: 'default.vue'
+    }, 'product-default')
+
     nuxt.hook("pages:extend", (pages) => {
       pages.push({
         name: "product-management",
         path: "/product-management",
         file: resolve(__dirname, "./pages/index.vue"),
+        meta: {layout: "product-default"}
       });
     });
   },
