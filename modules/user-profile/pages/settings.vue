@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h1>User Profile</h1>
-
-    <UserProfileCard />
+    <h1>User Profile > Settings</h1>
   </div>
 </template>
 

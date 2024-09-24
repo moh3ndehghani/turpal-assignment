@@ -2,10 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  extends: [
-    // "./modules/shared",
-    // "./modules/order-processing",
-    "./modules/product-management",
-    "./modules/user-profile",
+  modules: [
+    "~/modules/user-profile/module",
+    "~/modules/order-processing/module",
+    "~/modules/product-management/module",
   ],
 });

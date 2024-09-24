@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h1>Product Management</h1>
-
-    <UserProfileCard />
+    <h1>Product ===========> id: {{ route.params.productId }}</h1>
   </div>
 </template>
 
@@ -10,4 +8,6 @@
 definePageMeta({
   layout: "product-management",
 });
+
+const route = useRoute();
 </script>

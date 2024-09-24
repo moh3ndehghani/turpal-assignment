@@ -1,9 +1,6 @@
 <template>
   <div>
-    <p>Product Layout</p>
+    <span>product management layout</span>
     <slot />
   </div>
 </template>
-
-
-<script setup></script>

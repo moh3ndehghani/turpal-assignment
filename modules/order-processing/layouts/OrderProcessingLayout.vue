@@ -1,9 +1,6 @@
 <template>
   <div>
-    <p>Profile Layout</p>
+    <span>order processing layout</span>
     <slot />
   </div>
 </template>
-
-
-<script setup></script>
