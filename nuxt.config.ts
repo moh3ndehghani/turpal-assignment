@@ -6,5 +6,6 @@ export default defineNuxtConfig({
     "~/modules/user-profile/module",
     "~/modules/order-processing/module",
     "~/modules/product-management/module",
+    "@pinia/nuxt",
   ],
 });
